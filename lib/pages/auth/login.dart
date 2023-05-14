@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
 
                   // welcom back, you've been missed !
                   const Text(
-                    "Heureux de vous revoir !",
+                    "Content de vous revoir !",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.grey, fontSize: 16),
                   ),
@@ -45,7 +45,7 @@ class LoginPage extends StatelessWidget {
                     textInputAction: TextInputAction.next,
                     keyboardType: TextInputType.emailAddress,
                     controller: emailOrPhoneController,
-                    hinText: 'Adresse e-mail ou téléphone',
+                    hinText: 'email@venone.app',
                     obscureText: false,
                     prefixIcon: const Padding(
                       padding: EdgeInsets.all(16.0),
@@ -94,7 +94,7 @@ class LoginPage extends StatelessWidget {
                   const SizedBox(height: 25),
 
                   // login button
-                  CustomButton(buttonText: "Se connecter", onTap: loginUser),
+                  CustomButton(buttonText: "Connexion", onTap: loginUser),
                   const SizedBox(height: 20),
 
                   // already account ?
@@ -110,7 +110,7 @@ class LoginPage extends StatelessWidget {
                           ),
                           const Padding(
                             padding: EdgeInsets.symmetric(horizontal: 10.0),
-                            child: Text("Vous avez déjà un compte ?"),
+                            child: Text("Vous n'avez pas compte ?"),
                           ),
                           Expanded(
                             child: Divider(
@@ -124,7 +124,7 @@ class LoginPage extends StatelessWidget {
 
                   // login an account
                   CustomButton(
-                      buttonText: 'Connectez-vous',
+                      buttonText: 'Inscrivez-vous',
                       backgroundColor: Colors.deepOrangeAccent,
                       textStyle: const TextStyle(
                         color: Colors.white,

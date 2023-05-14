@@ -19,6 +19,7 @@ class RequestResetPasswordPage extends StatelessWidget {
 
     return Scaffold(
         appBar: CustomAppBar(
+          title: 'Réinitialiser votre mot de passe',
           btnIcon: const Icon(Icons.close, color: Colors.black, size: 30),
           btnOnPressed: () {
             Navigator.pop(context);

@@ -20,6 +20,7 @@ class SignUpPage extends StatelessWidget {
 
     return Scaffold(
         appBar: CustomAppBar(
+          title: '',
           btnIcon: const Icon(Icons.close, color: Colors.black, size: 30),
           btnOnPressed: () {
             Navigator.pop(context);
