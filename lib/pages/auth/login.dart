@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'signup.dart';
 import 'resetpwd.dart';
 import 'package:authlogin/components/_logo.dart';
-import 'package:authlogin/components/_appbar.dart';
 import 'package:authlogin/components/_button.dart';
 import 'package:authlogin/components/_textfield.dart';
 
@@ -20,17 +19,6 @@ class LoginPage extends StatelessWidget {
     final double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-        appBar: CustomAppBar(
-          btnIcon: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-            size: 30
-          ),
-          btnOnPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-
         backgroundColor: Colors.grey[300],
         body: SafeArea(
             child: SingleChildScrollView(
@@ -153,6 +141,8 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
-        )));
+        )
+      )
+    );
   }
 }
